@@ -6,14 +6,14 @@ interface ProductProps {
 
 function Product({ product }: ProductProps) {
   return <div>
-    <p>{product.id}</p>
-    <p>{product.title}</p>
-    <p>{product.description}</p>
-    <p>{product.color}</p>
-    <p>{product.condition_status}</p>
-    <p>{product.price}</p>
-    <p>{product.is_active}</p>
-    <p>{product.is_sold}</p>
+    <p>ID: {product.id}</p>
+    <p>Title: {product.title}</p>
+    <p>Description: {product.description}</p>
+    <p>Color: {product.color}</p>
+    <p>Condition: {product.condition_status}</p>
+    <p>Price: {product.price}</p>
+    <p>Active: {product.is_active}</p>
+    <p>Sold: {product.is_sold}</p>
   </div>;
 }
 

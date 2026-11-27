@@ -7,9 +7,9 @@ interface UserProps{
 function User({user}: UserProps){
     return(
         <div>
-            <p>{user.id}</p>
-            <p>{user.username}</p>
-            <p>{user.email}</p>
+            <p>ID: {user.id}</p>
+            <p>Username: {user.name}</p>
+            <p>Email: {user.email}</p>
         </div>
     )
 }

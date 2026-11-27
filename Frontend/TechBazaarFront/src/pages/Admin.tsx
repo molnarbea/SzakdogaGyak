@@ -1,10 +1,14 @@
-import { Link } from "react-router"
+
+import Users from "../components/Users"
 
 function Admin() {
   return (
     <section>
-        <h2>Admin oldal</h2>
-        <Link to="/uj-termek">Új Termék Felvétele</Link>
+      <h2>Admin</h2>
+      <p>
+        <i>Itt jelenek meg a felhasználók</i>
+      </p>
+      <Users />
     </section>
   )
 }
