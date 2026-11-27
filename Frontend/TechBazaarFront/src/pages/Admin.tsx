@@ -1,8 +1,11 @@
-import React from 'react'
+import { Link } from "react-router"
 
 function Admin() {
   return (
-    <div>Admin</div>
+    <section>
+        <h2>Admin oldal</h2>
+        <Link to="/uj-termek">Új Termék Felvétele</Link>
+    </section>
   )
 }
 
