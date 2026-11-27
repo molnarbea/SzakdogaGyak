@@ -8,7 +8,7 @@ function Public() {
       <p>
         <i>Itt jelenek meg a termékek</i>
       </p>
-      <article>
+    <article>
       <Products />
     </article>
     </>

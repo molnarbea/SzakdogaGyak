@@ -1,0 +1,48 @@
+body{
+    text-align: center;
+    background-color: #EEF1F2;
+}
+
+article{
+    display: flex;
+    justify-content: center;
+    flex-wrap: wrap;
+}
+
+img{
+    width: 80%;
+    border: 1px black solid;
+    border-radius: 5px;
+    box-shadow: 5px 5px 15px 0px rgba(0, 0, 0, 0.80);
+}
+
+.kartya{
+    border: 1px solid #D5DED9;
+    border-radius: 5px;
+    margin: 20px;
+    padding: 10px;
+    background-color: #F3F6F4;
+    color: #26312D;
+    text-align: center;
+    box-shadow: 5px 5px 15px 0px rgba(0, 0, 0, 0.80);
+    transition: transform 180ms ease;
+}
+
+.kartya:hover{
+    transform: scale(1.05);
+}
+
+.kartya p{
+    display: flex;
+    justify-content: space-between;
+    gap: 1rem;
+    text-align: left;
+}
+
+.kartya img{
+    transition: transform 180ms ease;
+}
+
+.kartya img:hover{
+    transform: scale(1.05);
+}

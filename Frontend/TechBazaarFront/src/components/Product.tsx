@@ -6,17 +6,17 @@ interface ProductProps {
 }
 
 function Product({ product }: ProductProps) {
-  return <div>
-    <p>ID: {product.id}</p>
-    <p>Title: {product.title}</p>
+  return <section className="kartya">
+    <h2>Title: {product.title}</h2>
     <img src={product.img} alt="kép" />
-    <p>Description: {product.description}</p>
-    <p>Color: {product.color}</p>
-    <p>Condition: {product.condition_status}</p>
-    <p>Price: {product.price}</p>
-    <p>Active: {product.is_active}</p>
-    <p>Sold: {product.is_sold}</p>
-  </div>;
+    <p><strong>ID:</strong> {product.id}</p>
+    <p><strong>Description:</strong> {product.description}</p>
+    <p><strong>Color:</strong> {product.color}</p>
+    <p><strong>Condition:</strong> {product.condition_status}</p>
+    <p><strong>Price:</strong> {product.price}</p>
+    <p><strong>Active:</strong> {product.is_active}</p>
+    <p><strong>Sold:</strong> {product.is_sold}</p>
+  </section>;
 }
 
 export default Product;
