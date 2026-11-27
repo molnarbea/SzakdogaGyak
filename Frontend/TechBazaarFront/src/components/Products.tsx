@@ -20,11 +20,11 @@ function Products() {
   }
 
   return (
-    <div>
+    <>
       {productsList.map((product, i) => {
         return <Product product={product} key={i} />;
       })}
-    </div>
+    </>
   );
 }
 
