@@ -1,8 +1,20 @@
-import React from 'react'
+import { NavLink, Outlet } from "react-router"
 
 function Layout() {
   return (
-    <div>Layout</div>
+    <>
+    <header>
+        <h1>Tech Bazaar</h1>
+      </header>
+      <nav>
+          <NavLink to="/" end>Public</NavLink>
+          <NavLink to="/admin">Admin</NavLink>
+          <NavLink to="/uj-termek">Új Termék</NavLink>
+        </nav>  
+        <main>
+            <Outlet/>
+          </main>          
+    </>
   )
 }
 
