@@ -9,7 +9,7 @@ class ProductController extends Controller
 {
     public function index()
     {
-       return Product::al(); 
+       return Product::all(); 
     }
 
     public function store(Request $request)
