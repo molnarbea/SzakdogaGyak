@@ -1,4 +1,4 @@
-import type { userType } from "../types/UserTypes";
+import type { userType } from "../types/UserType";
 
 const API_vegpont = "http://127.0.0.1:8000/api/users";
 

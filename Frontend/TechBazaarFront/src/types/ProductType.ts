@@ -11,7 +11,7 @@
  * is_active
  */
 
-export interface productType {
+export interface ProductType {
   id: number;
   title: string;
   description: string;
