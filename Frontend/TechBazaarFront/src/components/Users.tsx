@@ -19,10 +19,26 @@ function Users(){
         )
     }
     return(
-        <div>
-            {usersList.map((user) => (
-                <User user={user} key={user.id} />
-            ))}
+        <div className="user-table-wrap">
+            <table className="user-table">
+                <thead>
+                    <tr>
+                        <th scope="col">ID</th>
+                        <th scope="col">Név</th>
+                        <th scope="col">E-mail</th>
+                    </tr>
+                </thead>
+                <tbody>
+                    {usersList.map((user) => (
+                        <User user={user} key={user.id} />
+                    ))}
+                    {usersList.length === 0 && (
+                        <tr>
+                            <td className="user-table-empty" colSpan={3}>Nincs megjeleníthető felhasználó.</td>
+                        </tr>
+                    )}
+                </tbody>
+            </table>
         </div>
     )
 }

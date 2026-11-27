@@ -1,5 +1,6 @@
 import { useState, type FormEvent } from 'react'
 import { useNavigate } from 'react-router';
+import '../css/ujTermek.css';
 
 function UjTermek() {
   const [title, setTitle] = useState("");
@@ -11,8 +12,9 @@ function UjTermek() {
     navigate("/admin")
   }
   return (
-    <div>
-      <form onSubmit={handleSubmit}>
+    <section className="uj-termek-page">
+      <h2>Új termék felvétele</h2>
+      <form className="uj-termek-form" onSubmit={handleSubmit}>
         <label htmlFor="title">Termék neve: </label>
         <input
           id="title"
@@ -42,7 +44,7 @@ function UjTermek() {
 
         <button type="submit">Mentés</button>
       </form>
-    </div>
+    </section>
   )
 }
 

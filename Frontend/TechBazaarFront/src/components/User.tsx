@@ -1,4 +1,5 @@
 import type { UserType } from "../types/UserType";
+import "../css/adminPage.css";
 
 interface UserProps{
     user: UserType
@@ -6,11 +7,11 @@ interface UserProps{
 
 function User({user}: UserProps){
     return(
-        <div>
-            <p>ID: {user.id}</p>
-            <p>Username: {user.name}</p>
-            <p>Email: {user.email}</p>
-        </div>
+        <tr>
+            <td>{user.id}</td>
+            <td>{user.name}</td>
+            <td><a href={`mailto:${user.email}`}>{user.email}</a></td>
+        </tr>
     )
 }
 
