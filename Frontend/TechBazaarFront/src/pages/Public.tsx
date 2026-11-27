@@ -5,7 +5,7 @@ function Public() {
     <section>
       <h2>Public</h2>
       <p>
-        <i>Itt jelenek meg a temékek</i>
+        <i>Itt jelenek meg a termékek</i>
       </p>
       <Products />
     </section>
