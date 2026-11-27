@@ -8,6 +8,7 @@ function Product({ product }: ProductProps) {
   return <div>
     <p>ID: {product.id}</p>
     <p>Title: {product.title}</p>
+    <img src={product.img} alt="kép" />
     <p>Description: {product.description}</p>
     <p>Color: {product.color}</p>
     <p>Condition: {product.condition_status}</p>

@@ -27,7 +27,8 @@ class ProductFactory extends Factory
             'price' => fake()->numberBetween(500, 1000000),
             'condition_status' => fake()->randomElement(["Factory New", "Minimal Wear", "Field-Tested", "Well-Worn", "Battle-Scarred"]),
             'is_sold' => fake()->boolean(),
-            'is_active' => fake()->boolean()
+            'is_active' => fake()->boolean(),
+            'img' => fake()->imageUrl(),
         ];
     }
 }

@@ -20,4 +20,5 @@ export interface ProductType {
   condition_status: string;
   is_sold: boolean;
   is_active: boolean;
+  img: string;
 }

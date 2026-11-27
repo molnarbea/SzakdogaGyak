@@ -22,6 +22,7 @@ return new class extends Migration
             $table->string('condition_status');
             $table->boolean('is_sold');
             $table->boolean('is_active');
+            $table->string('img');
             $table->timestamps();
         });
     }
