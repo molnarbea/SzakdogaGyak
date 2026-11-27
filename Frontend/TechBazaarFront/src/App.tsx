@@ -1,16 +1,29 @@
+import { createHashRouter, RouterProvider } from 'react-router'
 import './App.css'
-import Users from './components/Users'
+import Layout from './pages/Layout'
+import Public from './pages/Public'
+import Admin from './pages/Admin'
+import UjTermek from './pages/UjTermek'
+import NoPage from './pages/NoPage'
+
+
+const router = createHashRouter([
+  {
+    path: "/",
+    element: <Layout/>,
+    children: [
+      {index: true, element: <Public/>},
+      {path: "admin", element: <Admin/>},
+      {path: "uj-termek", element: <UjTermek/>},
+      {path: "*", element: <NoPage/>},
+    ]
+  }
+])
 
 function App() {
 
   return (
-    <>
-      <header className="text-center">Szakdoga Gyakorlat: TechBazaar</header>
-        <article>
-          <Users />
-        </article>
-      <footer className="text-center">Készítette: Feri,Bea,Tibi</footer>
-    </>
+    <RouterProvider router = {router}/>
   )
 }
 
